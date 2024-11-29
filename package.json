@@ -1,0 +1,23 @@
+{
+  "name": "subhadra-captcha",
+  "version": "1.0.0",
+  "description": "A lightweight, customizable library to generate and validate captchas for input fields in web applications. Simplify user verification with minimal setup.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node test.js"
+  },
+  "keywords": [
+    "svg captcha",
+    "captcha",
+    "node captcha",
+    "js",
+    "free captcha",
+    "input captcha"
+  ],
+  "author": "Jitendra",
+  "license": "MIT",
+  "dependencies": {
+    "opentype.js": "^1.3.4"
+  }
+}
