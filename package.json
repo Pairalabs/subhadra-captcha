@@ -1,6 +1,6 @@
 {
   "name": "subhadra-captcha",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A lightweight, customizable library to generate and validate captchas for input fields in web applications. Simplify user verification with minimal setup.",
   "main": "index.js",
   "scripts": {

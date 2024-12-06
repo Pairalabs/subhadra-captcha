@@ -65,7 +65,14 @@ const createCaptcha = function (text, options) {
           
 	const start = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0,0,${width},${height}">`;
 	const xml = `${start}${bgRect}${paths}</svg>`;
-    const base64SVG = btoa(encodeURIComponent(xml));
+	const encoder = new TextEncoder();
+	const uint8Array = encoder.encode(xml);
+	let binaryString = '';
+	uint8Array.forEach(byte => {
+		binaryString += String.fromCharCode(byte);
+	});
+	const base64SVG = btoa(binaryString);
+    //const base64SVG = btoa(encodeURIComponent(xml));
 	return options.isBase64 ? base64SVG : xml;
 };
 
